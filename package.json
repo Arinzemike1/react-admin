@@ -1,0 +1,26 @@
+{
+  "name": "react-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 5000 --middlewares ./range.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arinzemike1/react-admin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arinzemike1/react-admin/issues"
+  },
+  "homepage": "https://github.com/Arinzemike1/react-admin#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "json-server": "^0.16.2"
+  }
+}
